@@ -1,0 +1,641 @@
+/* OVERALL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #1b1b1b;
+}
+p {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.button {
+    display: inline-block;
+    color: #FFF;
+    background-color: #32e0ff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    border: 2px solid #32e0ff;
+    transition: .2s;
+}
+.button:hover, .scroll span:hover {
+    background-color: #ffffff00;
+    transition: .2s;
+}
+/* HEADER - BANNER */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128px;
+    align-items: center;
+}
+header div a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #32e0ff;
+    transition: all .2s;
+}
+header div a:hover::after {
+    width: 100%;
+}
+header {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    /*background-color: #12002F;*/
+}
+    header.is-scrolling {
+        background-color: #000000ba;
+        
+    }
+        header.is-scrolling .container {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    header .container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+        header .container h2 {
+            color: inherit;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 900;
+        }
+            header.container h2 span {
+                font-weight: 600;
+            }
+nav .menu-flex{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(6, auto);
+}
+nav a {
+    font-size: 20px;
+}
+
+main section.banner {
+    color: #FFF;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    /*background-image: url('../Image/office-desk.jpg');
+    background-position: top right;
+    background-size: cover;*/
+
+
+    background: linear-gradient(137deg, #001b56 0%, #10367a 13%, #1a3595 25%, #2656ad 38%, #3774bf 50%, #3a7fbb 62%, #4e8fc7 75%, #46afc7 87%, #61c4c9 100%);
+}
+    /*main section.banner::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background-color: #000855;
+        opacity: 0.8;
+    }*/
+    main section.banner .container {
+        position: relative;
+        z-index: 1;
+    }
+        main section.banner .container h1 {
+            font-size: 72px;
+            margin-bottom: 32px;
+        }
+            main section.banner .container h1 span {
+                color: #32e0ff;
+            }
+        main section.banner .container h3 {
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 32px;
+            margin-right: 280px;
+        }
+
+/* Skills */
+main section.skill, main section.career, main section.contact {
+    max-width: 1750px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    gap: 40px;
+    color: #ffffff;
+}
+.title h2{
+    font-size: 40px;
+    margin-right: 675px;
+    margin-left: 175px;
+    margin-bottom: 75px;
+    text-transform: uppercase;
+}
+    .skill .title h2:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        background: #32e0ff;
+        transition: all .2s;
+        box-shadow: 0px 0px 13px 2px #0e414c;
+    }
+    .skill .title h2:hover:after {
+        width: 322px;
+        background: #ffffff;
+    }
+    .career .title h2:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        background: #32e0ff;
+        transition: all .2s;
+        box-shadow: 0px 0px 13px 2px #0e414c;
+    }
+    .career .title h2:hover:after {
+        width: 235px;
+        background: #ffffff;
+    }
+    .contact .title h2:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 70px;
+        background: #32e0ff;
+        transition: all .2s;
+        box-shadow: 0px 0px 13px 2px #0e414c;
+    }
+    .contact .title h2:hover:after {
+        width: 205px;
+        background: #ffffff;
+    }
+.skill .content {
+    background-color: #3b3b3b;
+    padding: 50px;
+    border: 2px solid #32e0ff69;
+    transition: .2s;
+}
+.skill .content:hover {
+    border: 2px solid #ffffff;
+    transition: .2s;
+}
+.skill .content span {
+    font-size: 10px;
+}
+.progress {
+    display: flex;
+}
+.language {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 20px 20px;
+}
+.language p {
+    width: 30%;
+}
+.bar {
+    width: 85%;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.score {
+    background-color: #535353;
+}
+    .score.html {
+        width: 85%;
+        background-color: #73cfc0;
+        transition: 0.25s;
+    }
+    .score.html:hover {
+        background-color: #61e6cf;
+        transition: 0.25s;
+    }
+    .score.css {
+        width: 70%;
+        background-color: #ff5050;
+        transition: 0.25s;
+    }
+    .score.css:hover {
+        background-color: #fc2727;
+        transition: 0.25s;
+    }
+    .score.js {
+        width: 50%;
+        background-color: #737ccf;
+        transition: 0.25s;
+    }
+    .score.js:hover {
+        background-color: #6b78f0;
+        transition: 0.25s;
+    }
+    .score.php {
+        width: 65%;
+        background-color: #9be977;
+        transition: 0.25s;
+    }
+    .score.php:hover {
+        background-color: #79f042;
+        transition: 0.25s;
+    }
+    .score.contao {
+        width: 75%;
+        background-color: #e7ae4f;
+        transition: 0.25s;
+    }
+    .score.contao:hover {
+        background-color: #f1a41f;
+        transition: 0.25s;
+    }
+    .score.wordpress {
+        width: 60%;
+        background-color: #ae73cf;
+        transition: 0.25s;
+    }
+    .score.wordpress:hover {
+        background-color: #a158cb;
+        transition: 0.25s;
+    }
+
+/* CAREER */
+
+.ligne {
+    height: 1000px;
+    width: 8px;
+    margin: 0 auto;
+    background: #6fcbdb;
+    box-shadow: 0px 0px 5px 4px #0e414c;
+}
+.box-timeline {
+    position: relative;
+}
+.box {
+    width: 400px;
+    min-height: 240px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    background: #3b3b3b;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
+    position: absolute;
+    transform: translate(-50%);
+    border: 2px solid #32e0ff69;
+    transition: .2s;
+}
+.box:hover {
+    border: 2px solid #ffffff;
+    transition: .2s;
+}
+.box a:hover {
+    color: #6bbce2;
+    transition: .2s;
+}
+.box a {
+    transition: .2s;
+}
+.b1 {
+    top: 80px;
+    left: calc(50% - 270px);
+}
+.b2 {
+    top: 386px;
+    left: calc(50% + 270px);
+}
+.b3 {
+    top: 692px;
+    left: calc(50% - 270px);
+}
+.b4 {
+    top: 1000px;
+    left: calc(50% + 270px);
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+    color: #FFFFFF;
+}
+.box h2 {
+    color: #FFFFFF;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.contact-box-1 {
+    width: 320px;
+    height: 320px;
+    background-color: #3b3b3b;
+    position: relative;
+    box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
+    border: 2px solid #32e0ff69;
+    z-index: 1;
+}
+.contact-box-1:hover {
+    cursor: pointer;
+}
+.contact-box-1:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #5daab8;
+    background-image: linear-gradient(315deg, #3fdae6 0%, #95deeb 74%);
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+.contact-box-1:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .contact-box-1:hover i {
+    color: #3b3b3b;
+    transition: all 0.3s ease;
+  }
+
+
+
+
+.contact-box i {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 100px;
+}
+.date {
+    margin-left: 25px!important;
+}
+
+
+.scroll span {
+    position: absolute;
+    width: 150px;
+    transform: rotate(270deg);
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    scroll-behavior: smooth;
+    padding: 10px 15px;
+    right: 40px;
+    top: 175px;
+    font-size: 20px !important;
+    transition: .2s;
+}
+.scroll p {
+    margin-left: 40px;
+}
+.scroll i {
+    position: absolute;
+    animation: move-scroll 0.65s infinite linear alternate;
+}
+.scroll span:hover i {
+    animation: move-scroll 0.25s infinite linear alternate;
+}
+
+@keyframes move-scroll {
+    0% {
+        left: 7px;
+    }
+    25% {
+        left: 12px;
+    }
+    50% {
+        left: 17px;
+    }
+    75% {
+        left: 22px;
+    }
+    100% {
+        left: 27px;
+    }
+}
+
+/* FOOTER */
+.banner-footer {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+        header .container h2  {
+            font-size: 25px;
+        }
+    nav a {
+        font-size: 15px;
+    }
+    .progress {
+        display: block;
+    }
+    .language {
+        width: 90%;
+        margin: 25px 20px;
+    }
+    .contact-box-1 {
+        width: 215px;
+        height: 215px;
+    }
+    .contact-box i {
+        top: 30%;
+        left: 30%;
+        font-size: 90px;
+    }
+
+}
+
+
+@media (max-width:1000px) {
+    .box p {
+        font-size: 14px;
+    }
+    .box h2 {
+        font-size: 18px;
+    }
+    .box {
+        width: 315px;
+    }
+    .b1, .b3 {
+        left: calc(70% - 270px);
+    }
+    .b2 {
+        left: calc(30% + 270px);
+    }
+}
+
+
+@media (max-width: 817px) {
+    nav .menu-flex {
+        display: none;
+    }
+    main section.banner .container h1 {
+        font-size: 60px;;
+    }
+    main section.banner .container h3 {
+        font-size: 35px;
+        margin-right: 0;
+    }
+    .button {
+        padding: 10px 14px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .banner .container .scroll {
+        display: none;
+    }
+    main section.banner .container {
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .b1, .b3 {
+        left: calc(100% - 270px);
+    }
+    .b2 {
+        left: calc(0% + 270px);
+    }
+    .title h2 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .skill .content {
+        padding: 15px;
+    }
+    .contact-box {
+        display: block;
+    }
+    .contact-box-1 {
+        width: 330px;
+        height: 85px;
+        margin-bottom: 25px;
+    }
+    .contact-box i {
+        top: 20%;
+        left: 20%;
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .language {
+        display: block;
+    }
+    .language p {
+        width: 100%;
+    }
+    .bar {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .b1, .b3 {
+        left: calc(100% - 185px);
+    }
+    .b2 {
+        left: calc(0% + 180px);
+    }
+    main section.banner .container h1 {
+        font-size: 55px;;
+    }
+    main section.banner .container h3 {
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .button {
+        padding: 10px 14px;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    main section.banner .container {
+        margin-left: 10px;
+    }
+    .is-scrolling {
+        display: none;
+    }
+    header {
+        position: absolute;
+    }
+    .contact-box-1 {
+        width: 100px;
+        height: 100px;
+        left: 35%;
+    }
+    .contact-box i {
+        top: 30%;
+        left: 30%;
+        font-size: 40px;
+    }
+    .title h2 {
+        font-size: 30px
+    }
+}
+
+@media (max-width: 470px) {
+    .b2 {
+        left: calc(0% + 150px);
+    }
+    .b1, .b3 {
+        left: calc(100% - 150px);
+    }
+    main section.banner .container h1 {
+        font-size: 45px;
+    }
+    main section.skill, main section.career, main section.contact {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .language p {
+        font-size: 15px;
+    }
+}

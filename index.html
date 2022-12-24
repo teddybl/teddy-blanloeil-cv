@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développeur CV Blanloeil Teddy</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="name"><span>Teddy </span>Blanloeil</h2>
+            <nav>
+                <div class="menu-flex">
+                        <a href="#">Accueil</a>
+                        <a href="#skill">Compétences</a>
+                        <a href="#career">Parcours</a>
+                        <a href="#" style="display: none;">Projets</a>
+                        <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="container">
+                <h1>
+                    Développeur <br class="hide-mob" />
+                    <span>web</span> full-stack
+                </h1>
+
+                <h3>Étudiant à l'ENI</h3>
+
+                <button class="button" type="submit" onclick="window.open('/image/Blanloeil_Teddy_CV.pdf')">Ouvrir mon CV</button>
+            
+                <a href="#skill" class="scroll">
+                    <span>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                        <p>Scroll</p>
+                    </span>
+                </a>
+
+            </div>
+        </section>
+        <section class="skill" id="skill">
+            <div class="title">
+                <h2>
+                    Compétences
+                </h2>
+            </div>
+            <div class="content">
+                <div class="progress">
+                    <div class="language html">
+                        <p>HTML</p>
+                        <div class="bar">
+                            <div class="bar score html"></div>
+                        </div>
+                    </div>
+                    <div class="language css">
+                        <p>CSS</p>
+                        <div class="bar">
+                            <div class="bar score css"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="language js">
+                        <p>JavaScript</p>
+                        <div class="bar">
+                            <div class="bar score js"></div>
+                        </div>
+                    </div>
+                    <div class="language php">
+                        <p>PHP</p>
+                        <div class="bar">
+                            <div class="bar score php"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="language contao">
+                        <p>Contao <span>(CMS)</span></p>
+                        <div class="bar">
+                            <div class="bar score contao"></div>
+                        </div>
+                    </div>
+                    <div class="language wordpress">
+                        <p>WordPress <span>(CMS)</span></p>
+                        <div class="bar">
+                            <div class="bar score wordpress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="career" id="career">
+            <div class="title">
+                <h2>
+                    Parcours
+                </h2>
+            </div>
+            <div class="box-timeline">
+
+                <div class="ligne"></div>
+        
+                <div class="box b1" data-anim="1">
+                    <h2>BAC +4 Concepteur Développeur d'Applications</h2>
+                    <p>
+                        Titre professionnel en préparation, reconnu par l'État Niveau 6 (Niveau Bac +4). Apprentissage à <a href="https://www.eni-ecole.fr/formations/developpement/niveau-6-bac4-concepteur-developpeur-dapplications/">l'ENI</a> (Nantes) en alternance chez <a href="https://www.up-motion.fr/">UpMotion</a> (les Herbiers)
+                    </p>
+                    <p class="date">
+                        En cours
+                    </p>
+                </div>
+                <div class="box b2" data-anim="2">
+                    <h2>BTS SIO Option SLAM</h2>
+                    <p>
+                        Diplome acquis en formation initiale au Campus Notre Dame du Roc de la Roche sur Yon. Stage effectué en tant que développeur à <a href="https://www.hygiene-expert.com/">Hygiène Expert</a> (les Herbiers) et à <a href="https://www.webstratton.fr/">Web Stratton</a> (la Roche sur Yon)
+                    </p>
+                    <p class="date">
+                        2022
+                    </p>
+                </div>
+                <div class="box b3" data-anim="3">
+                    <h2>BAC Scientifique Spécialité ISN</h2>
+                    <p>
+                        Diplome acquis en formation initiale au <a href="https://jean23-herbiers.com/">Lycée Jean XXIII</a> aux Herbiers 
+                    </p>
+                    <p class="date">
+                        2020
+                    </p>
+                </div>        
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="title">
+                <h2>
+                    Contact
+                </h2>
+            </div>
+            <div class="contact-box">
+                <a href="mailto:teddy.blanloeil@gmail.com">
+                    <div class="contact-box-1">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="contact-box-1">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="contact-box-1">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="banner-footer">
+            <p>©&nbsp</p>
+            <p id="current-date"></p>
+            <p>&nbsp- Blanloeil Teddy</p>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+</html>
